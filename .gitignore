@@ -19,10 +19,9 @@
 /client/.env.test.local
 /client/.env.production.local
 
-#firebase 
+#firebase
 /src/firebase
 
-#environment variables
 .env
 
 /client/npm-debug.log*

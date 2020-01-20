@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import CustomButton from "../custom-button/custom-button.component";
+import styled from 'styled-components';
+import CustomButton from '../custom-button/custom-button.component';
 
 export const CollectionItemContainer = styled.div`
   width: 22vw;
@@ -19,16 +19,19 @@ export const CollectionItemContainer = styled.div`
       display: flex;
     }
   }
+
   @media screen and (max-width: 800px) {
     width: 40vw;
+
     &:hover {
       .image {
-        opacity : unset
+        opacity: unset;
       }
-  
+
       button {
         opacity: unset;
       }
+    }
   }
 `;
 

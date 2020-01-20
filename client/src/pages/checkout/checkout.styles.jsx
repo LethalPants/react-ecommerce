@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const CheckoutPageContainer = styled.div`
   width: 55%;
@@ -7,14 +7,18 @@ export const CheckoutPageContainer = styled.div`
   flex-direction: column;
   align-items: center;
   margin: 50px auto 0;
+
   button {
     margin-left: auto;
     margin-top: 50px;
   }
+
+  @media screen and (max-width: 800px) {
+    width: 90%;
+  }
 `;
 
 export const CheckoutHeaderContainer = styled.div`
-  font-family: "Arimo", sans-serif;
   width: 100%;
   height: 40px;
   display: flex;
@@ -29,6 +33,14 @@ export const HeaderBlockContainer = styled.div`
   &:last-child {
     width: 8%;
   }
+
+  @media screen and (max-width: 800px) {
+    width: 22%
+
+    &:last-child {
+      width: 12%;
+    }
+  }
 `;
 
 export const TotalContainer = styled.div`
@@ -38,7 +50,6 @@ export const TotalContainer = styled.div`
 `;
 
 export const WarningContainer = styled.div`
-  font-family: "Arimo", sans-serif;
   text-align: center;
   margin-top: 40px;
   font-size: 24px;

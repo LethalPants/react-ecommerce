@@ -1,27 +1,27 @@
-import React from "react";
+import React from 'react';
+
 import {
-  ErrorImageContainer,
   ErrorImageOverlay,
+  ErrorImageContainer,
   ErrorImageText
-} from "./error-boundary.styles";
+} from './error-boundary.styles';
+
 class ErrorBoundary extends React.Component {
   constructor() {
     super();
+
     this.state = {
       hasErrored: false
     };
   }
 
   static getDerivedStateFromError(error) {
-    return {
-      hasErrored: true
-    };
+    // process the error
+    return { hasErrored: true };
   }
 
   componentDidCatch(error, info) {
-    console.log("====================================");
-    console.log(error, info);
-    console.log("====================================");
+    console.log(error);
   }
 
   render() {
@@ -33,6 +33,7 @@ class ErrorBoundary extends React.Component {
         </ErrorImageOverlay>
       );
     }
+
     return this.props.children;
   }
 }
